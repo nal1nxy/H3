@@ -2,8 +2,10 @@
 Practice with classes, files, and netested structures
 
 File: client.py
-Developers: COMP 801 instructors
+Developers: Nalin Yetukuri
+Date: 11/10/2024
 """
+
 from analysis import Analysis
 
 
