@@ -46,7 +46,7 @@ class Analysis:
         in the text file located at `file_path`.
         """
         return self.devs
-    
+
     def freq_of_lang(self):
         """
         Count the frequency of each programming language in the `self.devs`
@@ -56,4 +56,14 @@ class Analysis:
         :return: dict, keys are programming languages, values are the number of
             times the language appears in the `self.devs` list
         """
+
+        return {}
+
+    def lang_histogram(self):
+        """
+        Return the reverse of the dictionary returned by the `freq_of_lang`
+        where the keys are the frequency of each language and the values are
+        the list of languages that have that frequency.
+        """
+
         return {}
