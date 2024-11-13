@@ -22,7 +22,7 @@
 
 ### lang_histogram Method Design
 ...
-- Define a method `language_hist` with one parameter.
+- Define a method `lang_histogram` with one parameter.
 - The parameter is `self` of datatype class instance.
 - Define a local variable `language_hist`.
 - Assign an empty dictionary to the variable to the variable `language_hist`.

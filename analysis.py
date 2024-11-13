@@ -67,3 +67,10 @@ class Analysis:
         """
 
         return {}
+
+    def write_lang_popularity(self):
+        """
+        Write the histogram of programming languages to a text file. The
+        file has two columns: the frequency of the programming language and
+        the programming language itself.
+        """
