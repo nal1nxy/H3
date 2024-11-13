@@ -46,3 +46,14 @@ class Analysis:
         in the text file located at `file_path`.
         """
         return self.devs
+    
+    def freq_of_lang(self):
+        """
+        Count the frequency of each programming language in the `self.devs`
+        list of dictionaries. The programming language is the value of the
+        key 'LanguageWorkedWith'.
+
+        :return: dict, keys are programming languages, values are the number of
+            times the language appears in the `self.devs` list
+        """
+        return {}

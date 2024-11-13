@@ -12,7 +12,7 @@ def test_freq_of_lang_10():
     """
     Test the method by giving devops10.csv file as input to the Analysis class
     """
-    test_file = './devops10.csv'
+    test_file = "./devops10.csv"
     a_obj = Analysis(test_file)
     actual = a_obj.freq_of_lang()
     expected = {
@@ -38,7 +38,7 @@ def test_freq_of_lang_1():
     """
     Test the method by giving devops1.csv file as input to the Analysis class
     """
-    test_file = './devops1.csv'
+    test_file = "./devops1.csv"
     a_obj = Analysis(test_file)
     actual = a_obj.freq_of_lang()
     expected = {"Assembly": 1, "C#": 1, "C++": 1, "SQL": 1}
@@ -49,7 +49,7 @@ def test_freq_of_lang_5():
     """
     Test the method by giving devops5.csv file as input to the Analysis class
     """
-    test_file = './devops5.csv'
+    test_file = "./devops5.csv"
     a_obj = Analysis(test_file)
     actual = a_obj.freq_of_lang()
     expected = {
