@@ -57,7 +57,16 @@ class Analysis:
             times the language appears in the `self.devs` list
         """
 
-        return {}
+        language_freq = {}
+        for dictionary in self.devs:
+            language = dictionary["LanguageAdmired"]
+            lang_list = language.split(";")
+            for lang in lang_list:
+                if lang != "NA":
+                    if lang not in language_freq:
+                        language_freq[lang] = 0
+                    language_freq[lang] = language_freq[lang] + 1
+        return language_freq
 
     def lang_histogram(self):
         """
