@@ -75,7 +75,13 @@ class Analysis:
         the list of languages that have that frequency.
         """
 
-        return {}
+        language_freq = self.freq_of_lang()
+        language_hist = {}
+        for lang, freq in language_freq.items():
+            if freq not in language_hist:
+                language_hist[freq] = []
+            language_hist[freq].append(lang)
+        return language_hist
 
     def write_lang_popularity(self):
         """
