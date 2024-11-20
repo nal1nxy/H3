@@ -58,7 +58,7 @@ def test_write_lang_popularity_5():
             "Frequency,Language\n",
             "3,C#;SQL\n",
             "2,C++;Bash/Shell (all shells)\n",
-            "1,HTML/CSS;Java;JavaScript;Python;Go;Assembly;C;\n"
+            "1,HTML/CSS;Java;JavaScript;Python;Go;Assembly;C;"
             "MATLAB;PowerShell\n",
         ]
         print(actual)

@@ -89,3 +89,12 @@ class Analysis:
         file has two columns: the frequency of the programming language and
         the programming language itself.
         """
+        language_hist = self.lang_histogram()
+        with open(
+            "pop.csv", mode="w", encoding="utf-8", newline=""
+        ) as csv_file:
+            file_writer = csv.writer(csv_file)
+            file_writer.writerow(["Frequency", "Language"])
+            for freq, languages in language_hist.items():
+                langs = ";".join(languages)
+                file_writer.writerow([freq, langs])
